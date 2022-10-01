@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Division A - Albany Science Olympiad</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
@@ -12,18 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div id="navbar" x-data>
-      <span class="navbar-text"> Home </span>
-      <span class="navbar-text" id="gap"></span>
-      <span class="navbar-text"> FAQs </span>
-      <span class="navbar-text"> Projects </span>
-    </div>
+    <div id="navbar"></div>
     <hr />
     <div id="title">
       <h1>Albany Science Olympiad: Division A</h1>
     </div>
     <hr class="separator" />
-    <div id="infotext">
+    <div id="infotext" class="box">
       <p>
         Are you interested in <em>coding, biology, engineering,</em> and more?
         If you are, you’d be the perfect fit for our new
@@ -42,76 +37,9 @@
       </p>
       <button id="signup">Sign Up</button>
     </div>
-    <div id="links"></div>
-    <div id="footer">
-      <hr class="separator" />
-      <span>
-        © 2022 Arjun Verma & Albany Science Olympiad Division A; All Rights
-        Reserved.
-      </span>
-    </div>
+    <div id="footer"></div>
   </body>
   <style>
-    body {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    #navbar {
-      color: var(--secondary-color);
-      display: grid;
-      grid-template: 5vh / 25% 25% 25% 25%;
-      margin: 5px auto;
-    }
-
-    .navbar-text {
-      text-align: center;
-      margin: 0;
-      font-size: 1.4rem;
-    }
-
-    hr {
-      border: 1px solid grey;
-      margin: 0;
-    }
-
-    hr.separator {
-      width: 30vw;
-      margin: 0 auto;
-    }
-
-    h1 {
-      text-align: center;
-      font-weight: 600;
-      margin-top: 25px;
-      font-size: 3rem;
-      color: var(--accent-color);
-    }
-
-    #infotext {
-      margin: 50px auto;
-      width: 90%;
-      background-color: var(--accent-background-color);
-      border-radius: 20px;
-      text-align: center;
-    }
-
-    em {
-      font-style: normal;
-    }
-
-    p {
-      color: var(--main-color);
-      /* font-size: 3vh; */
-      font-size: 1.4rem;
-      padding: 20px;
-      margin-bottom: 0;
-    }
-
-    div:hover em {
-      color: var(--accent-color);
-      transition: 1s;
-    }
-
     div:hover button#signup {
       background-color: var(--accent-color);
       transition: 1s;
@@ -126,16 +54,6 @@
       font-size: 1.4rem;
       margin-bottom: 20px;
       cursor: pointer;
-    }
-
-    #footer {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    #footer span {
-      padding: 1vh 0;
-      display: block;
     }
   </style>
 </html>

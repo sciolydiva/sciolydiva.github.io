@@ -1,5 +1,9 @@
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
+
+
+/* colors */
 :root {
     --background-color: #363636;
     --accent-background-color: #444444;
@@ -8,20 +12,93 @@
     --secondary-color: #7b93ff;
 }
 
-html {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 5px 1vw;
-    background-color: var(--background-color);
-    color: var(--main-color);
-}
-
-
+/* light theme colors */
 @media (prefers-color-scheme: light) {
     :root {
         --background-color: #fbfbfb;
         --accent-background-color: #eeeeee;
         --main-color: #000000;
         --accent-color: #326f25;
-        --secondary-color: #2a3d8e;
+        --secondary-color: #2f46aa;
     }
+}
+
+/* initial setup */
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 5px 1vw;
+    background-color: var(--background-color);
+    color: var(--main-color);
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* common elements */
+#navbar {
+    color: var(--secondary-color);
+    display: grid;
+    grid-template: 5vh / 25% 25% 25% 25%;
+    margin: 5px auto;
+}
+
+.navbar-text {
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+hr {
+    border: 1px solid grey;
+    margin: 0;
+}
+
+hr.separator {
+    width: 30vw;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 25px;
+    font-size: 3rem;
+    color: var(--accent-color);
+}
+
+#footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer span {
+    padding: 1vh 0;
+    display: block;
+}
+
+.box {
+    margin: 50px auto;
+    width: 90%;
+    background-color: var(--accent-background-color);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box p {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+em {
+    font-style: normal;
+}
+
+div:hover em {
+    color: var(--accent-color);
+    transition: 1s;
 }

@@ -8,44 +8,32 @@
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <script defer type="module" src="/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="/why.js"></script>
   </head>
+
   <body>
-    <div id="navbar"></div>
+    <y-component navbar src="navbar"></y-component>
     <hr />
     <div id="title">
       <h1>Albany Science Olympiad: Division A</h1>
     </div>
     <hr class="separator" />
     <div id="infotext" class="box">
-      <p>
-        Are you interested in <em>coding, biology, engineering,</em> and more?
-        If you are, you’d be the perfect fit for our new
-        <em>Science Olympiad</em>
-        division exclusively for <em>elementary school students</em>! You’ll
-        have the opportunity to learn about all things science by doing hands-on
-        projects with help from Albany high school and middle school Science
-        Olympians. We’ll be “assigning” projects at the beginning of the month
-        and will follow through by hosting zooms where students can learn more
-        about the topic and show off their work. Currently, we are planning on
-        remote instruction, but hope to start in-person events in the next
-        school year. This is open to all grade levels, including rising
-        kindergarteners. If you are interested and would like to sign up head
-        over to the sign up form and please email any questions or concerns to
-        <em>scioly.div.a@gmail.com</em>!
-      </p>
-      <button id="signup">Sign Up</button>
+      <y-component markdown infotext src="infotext"></y-component>
+      <a id="signup" href="https://forms.gle/QRKwaC5TCCAFoeeS6" target="_blank"
+        >Sign Up</a
+      >
     </div>
-    <div id="footer"></div>
+    <y-component footer src="footer"></y-component>
   </body>
   <style>
-    div:hover button#signup {
+    div:hover a#signup {
       background-color: var(--accent-color);
       transition: 1s;
     }
 
-    button {
+    a#signup {
       color: var(--accent-background-color);
       background-color: var(--main-color);
       border: none;
@@ -54,6 +42,8 @@
       font-size: 1.4rem;
       margin-bottom: 20px;
       cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
     }
   </style>
 </html>

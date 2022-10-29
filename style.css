@@ -37,19 +37,7 @@ body {
 }
 
 /* common elements */
-#navbar {
-    color: var(--secondary-color);
-    display: grid;
-    grid-template: 5vh / 25% 25% 25% 25%;
-    margin: 5px auto;
-}
 
-.navbar-text {
-    cursor: pointer;
-    text-align: center;
-    margin: 0;
-    font-size: 1.4rem;
-}
 
 hr {
     border: 1px solid grey;
@@ -69,15 +57,7 @@ h1 {
     color: var(--accent-color);
 }
 
-#footer {
-    text-align: center;
-    margin-top: 20px;
-}
 
-#footer span {
-    padding: 1vh 0;
-    display: block;
-}
 
 .box {
     margin: 50px auto;

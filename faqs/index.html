@@ -12,11 +12,11 @@
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <script defer type="module" src="/main.js"></script>
+    <script defer src="/why.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div id="navbar"></div>
+    <y-component navbar src="navbar"></y-component>
     <hr />
     <div id="title">
       <h1>FAQs</h1>
@@ -37,7 +37,7 @@
       </template>
     </div>
 
-    <div id="footer"></div>
+    <y-component footer src="footer"></y-component>
   </body>
   <style>
     #faqs {

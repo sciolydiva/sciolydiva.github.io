@@ -1,4 +1,22 @@
-<span class="navbar-text"> Home </span>
+<a class="navbar-text" href="/"> Home </a>
 <span class="navbar-text" id="gap"></span>
-<span class="navbar-text"> FAQs </span>
-<span class="navbar-text"> Projects </span>
+<a class="navbar-text" href="/faqs"> FAQs </a>
+<span class="navbar-text" href="/projects"> Projects </span>
+
+<style>
+  [navbar] {
+    color: var(--secondary-color);
+    display: grid;
+    grid-template: 5vh / 25% 25% 25% 25%;
+    margin: 5px auto;
+  }
+
+  .navbar-text {
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    font-size: 1.4rem;
+    color: inherit;
+    text-decoration: none;
+  }
+</style>

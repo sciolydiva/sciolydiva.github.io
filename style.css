@@ -15,11 +15,11 @@
 /* light theme colors */
 @media (prefers-color-scheme: light) {
     :root {
-        --background-color: #fbfbfb;
-        --accent-background-color: #eeeeee;
-        --main-color: #000000;
-        --accent-color: #326f25;
-        --secondary-color: #2f46aa;
+        --background-color: #FFFFFF;
+        --accent-background-color: #ADD8E6;
+        --main-color: #92B473;
+        --accent-color: #FFF570;
+        --secondary-color: #ffffe0;
     }
 }
 

@@ -5,11 +5,11 @@
 
 /* colors */
 :root {
-    --background-color: #363636;
-    --accent-background-color: #444444;
-    --main-color: #ffffff;
-    --accent-color: #c0ffbf;
-    --secondary-color: #7b93ff;
+    --background-color: #FFFFFF;
+    --accent-background-color: #ADD8E6;
+    --main-color: #92B473;
+    --accent-color: #FFF570;
+    --secondary-color: #ffffe0;
 }
 
 /* light theme colors */

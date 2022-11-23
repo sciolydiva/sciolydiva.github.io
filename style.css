@@ -7,9 +7,9 @@
 :root {
     --background-color: #FFFFFF;
     --accent-background-color: #ADD8E6;
-    --main-color: #92B473;
+    --main-color: #000000;
     --accent-color: #FFF570;
-    --secondary-color: #ffffe0;
+    --secondary-color: #FFF570;
 }
 
 /* light theme colors */
@@ -17,9 +17,9 @@
     :root {
         --background-color: #FFFFFF;
         --accent-background-color: #ADD8E6;
-        --main-color: #92B473;
+        --main-color: #000000;
         --accent-color: #FFF570;
-        --secondary-color: #ffffe0;
+        --secondary-color: #FFF570;
     }
 }
 

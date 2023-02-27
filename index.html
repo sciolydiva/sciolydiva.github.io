@@ -1,71 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Division A - Albany Science Olympiad</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script defer src="/why.js"></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>sciolydiva try 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/minty/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
-    <y-component navbar src="navbar"></y-component>
-    <hr />
-    <div id="title">
-      <h1>Albany Science Olympiad: Division A</h1>
-    </div>
-    <hr class="separator" />
-    <div id="infotext" class="box">
-      <y-component markdown infotext src="infotext"></y-component>
-  
-    </div>
-    <div id="infotext" class="box">
-      <p> Our current project, happening on Dec 4th 1-3 will be Balloon Cars! </p>
-      <a id="signup" href="https://forms.gle/wqFMDZJGzSy2pZ1x8" target="_blank"
-        >Sign Up</a
+    <nav class="navbar navbar-light navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">SciOly Div A</a
+        ><button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navcol-2"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-2">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/faqs">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link" href="/team">Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="py-4 py-xl-5">
+      <div class="container">
+        <div class="text-center p-4 p-lg-5">
+          <h1 class="fw-bold">Albany Science Olympiad Division A</h1>
+          <p class="fw-bold text-primary mb-2">maybe some text here</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        data-bss-parallax-bg="true"
+        style="
+          height: 600px;
+          background-image: url((need image)/placeholders/1400x800.png);
+          background-position: center;
+          background-size: cover;
+        "
       >
+        <div class="container h-100">
+          <div class="row h-100">
+            <div
+              class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center"
+            >
+              <div style="max-width: 350px">
+                <h1 class="text-uppercase fw-bold">Interested?</h1>
+                <p class="my-3">some text here</p>
+                <a class="btn btn-primary btn-lg me-2" role="button" href="TODO"
+                  >Sign up</a
+                ><a
+                  class="btn btn-outline-primary btn-lg"
+                  role="button"
+                  href="/faqs"
+                  >FAQs</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container py-4 py-xl-5" data-aos="slide-left">
+      <div class="row gy-4 gy-md-0">
+        <div class="col-md-6">
+          <div class="p-xl-5 m-xl-5">
+            <img
+              class="rounded img-fluid w-100 fit-cover"
+              style="min-height: 300px"
+              src="(need image)/placeholders/1400x800.png"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 d-md-flex align-items-md-center">
+          <div style="max-width: 350px">
+            <h2 class="text-uppercase fw-bold">Hands on stem</h2>
+            <p class="my-3">some text here</p>
+            <a class="btn btn-primary btn-lg me-2" role="button" href="#"
+              >Button</a
+            ><a class="btn btn-outline-primary btn-lg" role="button" href="#"
+              >Button</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-
-    <p id="demo"></p>
-    <script>
-    var deadline = new Date("Nov 23, 2022 15:37:25").getTime();
-    var x = setInterval(function() {
-    var now = new Date().getTime();
-    var t = deadline - now;
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    document.getElementById("demo").innerHTML = days + "d " 
-    + hours + "h " + minutes + "m " + seconds + "s ";
-        if (t < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-    </script> 
-    <y-component footer src="footer"></y-component>
+    <div class="container py-4 py-xl-5" data-aos="slide-right">
+      <div class="row gy-4 gy-md-0">
+        <div
+          class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-start align-items-start justify-content-md-start align-items-md-center justify-content-xl-center"
+        >
+          <div style="max-width: 350px; text-align: left">
+            <h2 class="text-uppercase fw-bold">Something something</h2>
+            <p class="my-3">some text here</p>
+            <a class="btn btn-primary btn-lg me-2" role="button" href="#"
+              >Button</a
+            ><a class="btn btn-outline-primary btn-lg" role="button" href="#"
+              >Button</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-xl-5 m-xl-5">
+            <img
+              class="rounded img-fluid w-100 fit-cover"
+              style="min-height: 300px"
+              src="(need image)/placeholders/1400x800.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      data-bss-disabled-mobile="true"
+      data-bss-hover-animate="bounce"
+      class="py-4 py-xl-5"
+    >
+      <div class="container h-100">
+        <div class="text-white bg-primary border rounded border-0 p-4 py-5">
+          <div class="row h-100">
+            <div
+              class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center"
+            >
+              <div style="margin: auto">
+                <p class="mb-4" style="margin-bottom: 10px !important">
+                  Our next event, something something, starts in:
+                </p>
+                <h1 class="text-uppercase fw-bold text-white mb-3" id="counter">
+                  5D 10h 20m 50s
+                </h1>
+                <button class="btn btn-light fs-5 py-2 px-4" type="button">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p style="text-align: center">
+      © 2023 Albany Science Olympiad Division A, Arjun Verma, Grace Xu; All
+      Rights Reserved.
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/initanimatecss.js"></script>
   </body>
-  <style>
-    div:hover a#signup {
-      background-color: var(--accent-color);
-      transition: 1s;
-    }
-
-    a#signup {
-      color: var(--accent-background-color);
-      background-color: var(--main-color);
-      border: none;
-      border-radius: 10px;
-      padding: 10px;
-      font-size: 1.4rem;
-      margin-bottom: 20px;
-      cursor: pointer;
-      display: inline-block;
-      text-decoration: none;
-    }
-  </style>
 </html>

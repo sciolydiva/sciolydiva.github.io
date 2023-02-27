@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FAQs - Division A - Albany Science Olympiad</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module">
+      const FAQsData = async () => await (await fetch("./data.json")).json()
+      window.FAQsData = FAQsData
+    </script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script defer src="/why.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <y-component navbar src="navbar"></y-component>
+    <hr />
+    <div id="title">
+      <h1>FAQs</h1>
+    </div>
+    <hr class="separator" />
+    <div id="infotext" class="box">
+      <p>
+        Thank you for your interest in Albany Science Olympiad Division A!
+        Below, we have some FAQs to answer some common questions we get.
+      </p>
+    </div>
+    <div id="faqs" class="box">
+      <template x-data="{FAQsData: await FAQsData() }" x-for="faq in FAQsData">
+        <div class="faq">
+          <p class="q" x-text="faq[0]"></p>
+          <p class="a" x-text="faq[1]"></p>
+        </div>
+      </template>
+    </div>
+
+    <y-component footer src="footer"></y-component>
+  </body>
+  <style>
+    #faqs {
+      text-align: left;
+      padding: 10px 0;
+    }
+    .faq:hover .q {
+      transition: 1s;
+      color: var(--secondary-color);
+    }
+
+    .faq:hover .a {
+      transition: 1s;
+      color: var(--accent-color);
+    }
+
+    .q,
+    .a {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      margin: 0;
+    }
+
+    .faq {
+      padding: 20px;
+    }
+  </style>
+</html>

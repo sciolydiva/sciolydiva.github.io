@@ -157,7 +157,6 @@
                     function updateCounter() {
                       const distance = countDownDate - new Date().getTime()
 
-                      // if negative, make it say expired
                       if (distance < 0) {
                         counter.innerHTML = "Already started!"
                         return

@@ -155,8 +155,7 @@
                     ).getTime()
 
                     function updateCounter() {
-                      const now = new Date().getTime()
-                      const distance = countDownDate - now
+                      const distance = countDownDate - new Date().getTime()
 
                       // if negative, make it say expired
                       if (distance < 0) {
@@ -176,11 +175,6 @@
                       )
 
                       counter.innerHTML = `${days}D ${hours}h ${minutes}m ${seconds}s`
-
-                      if (distance < 0) {
-                        clearInterval(x)
-                        counter.innerHTML = "EXPIRED"
-                      }
                     }
 
                     updateCounter()

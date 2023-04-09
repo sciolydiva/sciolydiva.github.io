@@ -22,7 +22,7 @@ header.masthead h1 {
   }
   header.masthead p {
 
-    color:#000000; 
+    color: #ffffff !important; 
     position: absolute; 
     top: 30%;
     left: 50%; 

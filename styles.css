@@ -1,6 +1,16 @@
 .fit-cover {
     object-fit: cover;
 }
+
+:root {
+    --bs-primary: #BAD49A !important;
+}
+
+.margin-y-small {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 header.mastheadteam{
     padding-top: 20%;
     padding-bottom: 30%;
@@ -8,7 +18,7 @@ header.mastheadteam{
     background-image: url("/photos/crackthecase/IMG_0292.JPG");
     background-position: center;
     background-size: cover;
-    position: relative; 
+    position: relative;
   }
 
 header.mastheadmain{
@@ -18,11 +28,11 @@ header.mastheadmain{
     background-image: url("/photos/STEM\ Based\ Student-Led\ Activities\ for\ Elementary\ Schoolers.png");
     background-position: center;
     background-size: cover;
-    position: relative; 
+    position: relative;
   }
 
 header.mastheadteam h1 {
-    
+
     position: absolute; /* Set the position of the text to absolute */
     top: 10%; /* Set the top position to 50% of the container */
     left: 50%; /* Set the left position to 50% of the container */
@@ -32,12 +42,12 @@ header.mastheadteam h1 {
   }
   header.mastheadteam p {
 
-    color: #ffffff !important; 
-    position: absolute; 
+    color: #ffffff !important;
+    position: absolute;
     top: 20%;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    margin: 0; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
     font-size: 1.5vw;
-    
+
   }
